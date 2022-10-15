@@ -1,6 +1,23 @@
+
+
+let myTitle = document.getElementById("formTitle").value;
+let myFeature = document.getElementById("feature");
+let myBug = document.getElementById("bug");
+let myTB;
+if(myFeature.checked){
+    myTB= document.getElementById("feature").id;
+}
+if(myBug.checked){
+    myTB= document.getElementById("Bug").id;
+}
+
+
+
+
 function create (){
-    let myTitle = document.getElementById("formTitle").value;
-    let myFeature = document.getElementById("feature");
-    let myBug = document.getElementById("bug");
-    if(myFeature.checked)
+   
+    console.log(myTitle);
+    console.log(myTB);
+    
+
 }

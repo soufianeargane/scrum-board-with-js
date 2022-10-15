@@ -63,19 +63,19 @@
 				<input type="text" class="form-control" id="formTitle">
 				<label  class="form-label mt-10px">Type</label>
 				<div class="form-check ms-3">
-					<input class="form-check-input" type="radio" name="nameFeature" id="feature" checked>
+					<input class="form-check-input" type="checkbox" name="flexRadioDefault" id="feature" checked>
 					<label class="form-check-label" >Feature</label>
 				</div>
 				<div class="form-check ms-3">
-					<input class="form-check-input" type="radio" name="nameBug" id="bug">
+					<input class="form-check-input" type="checkbox" name="flexRadioDefault" id="bug">
 					<label class="form-check-label" >Bug</label>
 				</div>
 				<label class="form-label mt-1">Priority</label>
 				<select class="form-select form-select-lg mb-3" id="formSelectPriority" aria-label=".form-select-lg example">
 					<option disabled selected>Please select</option>
-					<option value="1">One</option>
-					<option value="2">Two</option>
-					<option value="3">Three</option>
+					<option value="1">to do</option>
+					<option value="2">doing</option>
+					<option value="3">done</option>
 				</select>
 				<label  class="form-label mt-1">Status</label>
 				<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="formSelectStatus">
@@ -84,7 +84,6 @@
 					<option value="2">Two</option>
 					<option value="3">Three</option>
 				</select>
-
 				<label  class="form-label mt-1">Date</label>
 				<div>
 					<input type="date" id="endDate" name="trip-start"
@@ -97,7 +96,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button"  class="btn btn-light text-dark" data-bs-dismiss="modal">Close</button>
-					<button type="submit" onclick="formSubmit()" class="btn btn-primary">submit</button>
+					<button type="button" onClick="create()" class="btn btn-primary">submit</button>
 				</div>
 			</div>
 		</div>
