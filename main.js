@@ -20,52 +20,64 @@ let myDate
 ////
 let myDescription
 
+let table =[]
+
 
 //document.querySelector('.submit').addEventListener('click',function()
 
 function create() {
     // e.preventDefault()
     myTitle=document.getElementById("form").value
-    console.log(myTitle)
+    // console.log(myTitle)
     //////////
     if(myFeature.checked){
         myTB= document.getElementById("feature").id
-        console.log(myTB)
+        // console.log(myTB)
     }
     if(myBug.checked){
         myTB= document.getElementById("bug").id;
-        console.log(myTB)
+        // console.log(myTB)
     }
     ///////////
     if(myOne.selected){
         myPriority = document.getElementById("one").id
-        console.log(myPriority)
+        // console.log(myPriority)
     }
     if(myTwo.selected){
         myPriority = document.getElementById("two").id
-        console.log(myPriority)
+        // console.log(myPriority)
     }
     if(myThree.selected){
         myPriority = document.getElementById("three").id
-        console.log(myPriority)
+        // console.log(myPriority)
     }
     ////////////
     if(myToDo.selected){
         myStatus = document.getElementById("to do").id
-        console.log(myStatus)
+        // console.log(myStatus)
     }
     if(myDoing.selected){
         myStatus = document.getElementById("doing").id
-        console.log(myStatus)
+        // console.log(myStatus)
     }
     if(myDone.selected){
         myStatus = document.getElementById("done").id
-        console.log(myStatus)
+        // console.log(myStatus)
     }
     ////
     myDate=document.getElementById("endDate").value
-    console.log(myDate)
+    // console.log(myDate)
     ////
     myDescription = document.getElementById("formTextarea").value
-    console.log(myDescription)
+    // console.log(myDescription)
+    table.push({
+        title:myTitle,
+        tb:myTB,
+        priority:myPriority,
+        status:myStatus,
+        date:myDate,
+        description:myDescription
+    })
+
+    console.log(table)
 }
