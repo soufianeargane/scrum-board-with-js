@@ -22,8 +22,10 @@ let myDescription
 
 let table =[];
 
-let tasks ;
-
+let myDos, myDoings, myDones ;
+myDos = document.getElementById("to-do-tasks");
+myDoings = document.getElementById("in-progress-tasks");
+myDones = document.getElementById("done-tasks");
 
 //document.querySelector('.submit').addEventListener('click',function()
 
@@ -56,17 +58,17 @@ function create() {
     ////////////
     if(myToDo.selected){
         myStatus = document.getElementById("to do").id
-        tasks = document.getElementById("to-do-tasks");
+        
         // console.log(myStatus)
     }
     if(myDoing.selected){
         myStatus = document.getElementById("doing").id
-        tasks = document.getElementById("in-progress-tasks");
+        
         // console.log(myStatus)
     }
     if(myDone.selected){
         myStatus = document.getElementById("done").id
-        tasks = document.getElementById("done-tasks");
+        
         // console.log(myStatus)
     }
     ////
@@ -90,11 +92,15 @@ function create() {
 
 function display (){
     
-    tasks.innerHTML=''
+    /* tasks.innerHTML=''*/
+    myDos.innerHTML= '';
+    myDoings.innerHTML='';
+    myDones.innerHTML='';
+
     for(let i = 0; i < table.length; i++){
 //tasks == document.getElementById("to-do-tasks")
         if( table[i].status === "to do" ){
-            tasks.innerHTML +=`<button class=" w-100 border-0 mb-1 bg-white d-flex">
+            myDos.innerHTML +=`<button class=" w-100 border-0 mb-1 bg-white d-flex">
          					<div class="p-2">
          						<i class="bi bi-question-circle text-green-500 fs-4"></i> 
          					</div>
@@ -112,7 +118,7 @@ function display (){
          				</button> `
         }
         if(table[i].status === "doing"){
-            tasks.innerHTML +=`<button class=" w-100 border-0 mb-1 bg-white d-flex">
+            myDoings.innerHTML +=`<button class=" w-100 border-0 mb-1 bg-white d-flex">
          					<div class="p-2">
          						<i class="bi bi-question-circle text-green-500 fs-4"></i> 
          					</div>
@@ -130,7 +136,7 @@ function display (){
          				</button> `
         }
         if(table[i].status === "done" ){
-            tasks.innerHTML +=`<button class=" w-100 border-0 mb-1 bg-white d-flex">
+            myDones.innerHTML +=`<button class=" w-100 border-0 mb-1 bg-white d-flex">
          					<div class="p-2">
          						<i class="bi bi-question-circle text-green-500 fs-4"></i> 
          					</div>
