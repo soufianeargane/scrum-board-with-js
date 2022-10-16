@@ -79,5 +79,11 @@ function create() {
         description:myDescription
     })
 
-    console.log(table)
+    display()
+}
+
+function display (){
+    for(let i = 0; i < table.length; i++){
+        console.log(table[i])
+    }
 }
