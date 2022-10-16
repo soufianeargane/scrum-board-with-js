@@ -11,14 +11,14 @@
 			// 						<i class="bi bi-question-circle text-green-500 fs-4"></i> 
 			// 					</div>
 			// 					<div class=" d-flex flex-column text-start py-2">
-			// 						<div class="fw-bolder h5 mb-1 ">Keep all the updated requirements in one place</div>
+			// 						<div class="fw-bolder h5 mb-1 ">  ${table[i][1]}</div>
 			// 						<div class="d-flex flex-column text-start">
-			// 							<div class="text-gray-600 mb-1">#1 created in 2022-10-08</div>
-			// 							<div class="mb-2" title="There is hardly anything more frustrating than having to look for current requirements in tens of comments under the actual description or having to decide which commenter is actually authorized to change the requirements. The goal here is to keep all the up-to-date requirements and details in the main/primary description of a task. Even though the information in comments may affect initial criteria, just update this primary description accordingly.">There is hardly anything more frustrating than having t...</div>
+			// 							<div class="text-gray-600 mb-1">#1 created in  ${table[i][4]}</div>
+			// 							<div class="mb-2" title=" ${table[i][5]}"</div>
 			// 						</div>
 			// 						<div class="">
-			// 							<span class="rounded px-2 py-1 text-white bg-cyan-600">High</span>
-			// 							<span class=" rounded px-2 py-1 bg-gray-400">Feature</span>
+			// 							<span class="rounded px-2 py-1 text-white bg-cyan-600"> ${table[i][1]}</span>
+			// 							<span class=" rounded px-2 py-1 bg-gray-400"></span>
 			// 						</div>
 			// 					</div>
 			// 				</button>
